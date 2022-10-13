@@ -1,17 +1,18 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { DialogComponent } from './dialog/dialog.component';
-import { ApiService } from './services/api.service';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { ConfirmationDialogComponent } from '../confirmation-dialog/confirmation-dialog.component';
+import { DialogComponent } from './../dialog/dialog.component';
+import { ApiService } from './../services/api.service';
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-table',
+  templateUrl: './table.component.html',
+  styleUrls: ['./table.component.scss']
 })
-export class AppComponent implements OnInit {
-  title = 'angular-crud-app';
+export class TableComponent implements OnInit {
+
   displayedColumns: string[] = [
     'productName',
     'category',
@@ -70,16 +71,24 @@ export class AppComponent implements OnInit {
       }
     });
   }
-  deleteProduct(id:number){
-    this.api.deleteProduct(id)
-    .subscribe({
-      next:(res)=>{
-        alert("Product Deleted Successfully");
+  deleteProducts(row:any){
+    this.dialog.open(ConfirmationDialogComponent, {
+      width: '30%',
+      data:row,
+    }).afterClosed().subscribe({
+      next:()=>{
         this.getAllProducts();
       },
       error:()=>{
-        alert("Error while deleting the record")
+        alert("Error while deleting the record");
       }
-    })
+    });
   }
 }
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+{
+  "productList": [
+    {
+      "productName": "Brocolli",
+      "category": "Vegetables",
+      "date": "2022-09-13T18:30:00.000Z",
+      "freshness": "Second Hand",
+      "price": 20,
+      "comment": "Not Fresh",
+      "id": 8
+    },
+    {
+      "productName": "Pineapple",
+      "category": "Fruits",
+      "date": "2022-09-01T18:30:00.000Z",
+      "freshness": "Brand New",
+      "price": 20,
+      "comment": "Brand new",
+      "id": 9
+    },
+    {
+      "productName": "Air Conditioner",
+      "category": "Electronics",
+      "date": "2022-10-03T18:30:00.000Z",
+      "freshness": "Brand New",
+      "price": 200,
+      "comment": "Brand New",
+      "id": 10
+    },
+    {
+      "productName": "Apples",
+      "category": "Fruits",
+      "date": "2022-09-30T18:30:00.000Z",
+      "freshness": "Brand New",
+      "price": 20,
+      "comment": "Fresh Apples",
+      "id": 11
+    },
+    {
+      "productName": "Television",
+      "category": "Electronics",
+      "date": "2022-10-03T18:30:00.000Z",
+      "freshness": "Brand New",
+      "price": 150,
+      "comment": "Brand new",
+      "id": 13
+    },
+    {
+      "productName": "oven",
+      "category": "Electronics",
+      "date": "2022-10-09T18:30:00.000Z",
+      "freshness": "Brand New",
+      "price": 200,
+      "comment": "new",
+      "id": 14
+    }
+  ],
+  "signupUsersList": [
+    {
+      "email": "shivani.narang@geminisolutions.com",
+      "password": "1234",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk1YzE5Y2EwLTI3NjQtMTFlZC05NTcyLTg3MGRiMjk4ZWI0MSIsImVtYWlsIjoiU2hpdmFuaS5OYXJhbmcrMUBHZW1pbmlzb2x1dGlvbnMuY29tIiwicm9sZV9pZCI6IjYwNDY5OGI5LTk5N2YtNGQ0Yi1hN2U3LTUyNGNmZjYyYTRiOSIsImNhdGVnb3J5X2lkIjoiYzY4ZjdkMjAtZjkzOC0xMWVjLThiN2UtMTczNTU4M2FhN2JlIiwiaWF0IjoxNjY0MzQzNzU0LCJleHAiOjE2Njk1Mjc3NTR9.Wm6birwXVbroM2z8TiFo_tRKZOrkPB2MFeHZCaOM0dA"
+    }
+  ]
+}
